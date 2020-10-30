@@ -20,9 +20,9 @@ jobs:
         DOCKER_USER: ${{ secrets.DOCKER_USER }} 
         DOCKER_PASS: ${{ secrets.DOCKER_PASS }} 
       run: |
-        docker login -u $DOCKER_USER -p $DOCKER_PASS
+        docker login -u $DOCKER_USER --password-stdin $DOCKER_PASS
     - name: Build the Docker image
       run: docker build . --tag playlist-sync:$(date +%s)
     - name: docker push
       run: |
-        docker push playlist-sync:$(date +%s)
+        docker push $DOCKER_USER/playlist-sync:$(date +%s)
