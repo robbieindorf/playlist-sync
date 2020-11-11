@@ -138,10 +138,10 @@ def main():
     secondsToWait = int(os.environ.get('SECONDS_TO_WAIT', 1800))
     baseurl = os.environ.get('PLEX_URL')
     token = os.environ.get('PLEX_TOKEN')
-    plex = PlexServer(baseurl, token)
-    client_credentials_manager = SpotifyClientCredentials()
-    sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
     while True:
+        plex = PlexServer(baseurl, token)
+        client_credentials_manager = SpotifyClientCredentials()
+        sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
         runSync(plex, sp)
         time.sleep(secondsToWait)
 
