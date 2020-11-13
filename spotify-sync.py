@@ -66,10 +66,10 @@ def getPlexTracks(plex: PlexServer, spotifyTracks: []) -> List[Track]:
         track = spotifyTrack['track']
 
         try:
-            musicTracks = plex.search(track['name'], mediatype='track')
+            musicTracks = plex.search(track['artist'], mediatype='artist')
         except:
             try:
-                musicTracks = plex.search(track['name'], mediatype='track')
+                musicTracks = plex.search(track['name'], mediatype='artist')
             except:
                 logging.info("Issue making plex request")
                 continue
