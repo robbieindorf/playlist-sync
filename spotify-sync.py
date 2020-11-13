@@ -64,7 +64,6 @@ def getPlexTracks(plex: PlexServer, spotifyTracks: []) -> List[Track]:
         if spotifyTrack['track'] == None:
             continue
         track = spotifyTrack['track']
-        logging.info("Searching Plex for: %s by %s" % (track['name'], track['artists'][0]['name']))
 
         try:
             musicTracks = plex.search(track['name'], mediatype='track')
@@ -78,8 +77,10 @@ def getPlexTracks(plex: PlexServer, spotifyTracks: []) -> List[Track]:
         if len(musicTracks) > 0:
             plexMusic = filterPlexArray(musicTracks, track['name'], track['artists'][0]['name'])
             if len(plexMusic) > 0:
-                logging.info("Found Plex Song: %s by %s" % (track['name'], track['artists'][0]['name']))
                 plexTracks.append(plexMusic[0])
+            else:
+                logging.info("Missing Plex Song: %s by %s" % (track['name'], track['artists'][0]['name']))
+
     return plexTracks
 
 
