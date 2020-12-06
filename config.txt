@@ -6,16 +6,12 @@ spotify:playlist:37i9dQZF1DX4WYpdgoIcn6
 spotify:playlist:37i9dQZF1DWTkxQvqMy4WW
 - Get Turnt
 spotify:playlist:37i9dQZF1DWY4xHQp97fN6
-- Lo-Fi Beats
-spotify:playlist:37i9dQZF1DWWQRwui0ExPn
-- Mega Hit Mix
-spotify:playlist:37i9dQZF1DXbYM3nMM0oPk
-- Mood Booster
-spotify:playlist:37i9dQZF1DX3rxVfibe1L0
 - Morning Motivation
 spotify:playlist:37i9dQZF1DXc5e2bJhV6pu
 - Most Streamed Songs of the Decade
 spotify:playlist:37i9dQZF1DWYJ5kmTbkZiz
+- Power Workout
+spotify:playlist:37i9dQZF1DWUVpAXiEPK8P
 - RapCaviar
 spotify:playlist:37i9dQZF1DX0XUsuxWHRQd
 - Rock Classics
@@ -58,7 +54,5 @@ spotify:playlist:37i9dQZF1DX6RCydf9ytsj
 spotify:playlist:37i9dQZF1DXaiEFNvQPZrM
 - Country's Greatest Hits: The 00's
 spotify:playlist:37i9dQZF1DXdxUH6sNtcDe
-- Country Music 101: The Military
-spotify:playlist:37i9dQZF1DX8x7CpWsWZBJ
 - Hot Country
 spotify:playlist:37i9dQZF1DX1lVhptIYRda
